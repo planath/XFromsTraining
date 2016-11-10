@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFromsApp.ColorPickerPage">
+  <StackLayout>
+    <BoxView HorizontalOptions="FillAndExpand"
+             Color="Purple"
+             HeightRequest="100"
+             x:Name="BoxView">
+    </BoxView>
+
+    <Label 
+      Text="Red"/>
+    <Slider
+      Minimum="0"
+      Maximum="1" 
+      x:Name="SliderRed"
+      ValueChanged="OnColorSliderChange" />
+    
+    <Label 
+      Text="Blue"/>
+    <Slider 
+      Minimum="0" 
+      Maximum="1" 
+      x:Name="SliderBlue" 
+      ValueChanged="OnColorSliderChange" />
+
+    <Label 
+      Text="Green"/>
+    <Slider
+      Minimum="0" 
+      Maximum="1"
+      x:Name="SliderGreen"
+      ValueChanged="OnColorSliderChange" />
+  </StackLayout>
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+</ContentPage>

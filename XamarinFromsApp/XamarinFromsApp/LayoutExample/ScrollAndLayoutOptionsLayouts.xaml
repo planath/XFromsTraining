@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFromsApp.ScrollAndLayoutOptionsLayouts">
+  <ScrollView>
+    <StackLayout
+      Orientation="Vertical"
+      Padding="30"
+      Spacing="10">
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="Firstname" VerticalOptions="End"/>
+        <Entry x:Name="Firstname" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="Lastname" VerticalOptions="End"/>
+        <Entry x:Name="Lastname" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="Email" VerticalOptions="End"/>
+        <Entry x:Name="Email" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="Other" VerticalOptions="End"/>
+        <Entry x:Name="Other" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="Stuff" VerticalOptions="End"/>
+        <Entry x:Name="Stuff" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="You" VerticalOptions="End"/>
+        <Entry x:Name="You" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="10">
+        <Label Text="Name it" VerticalOptions="End"/>
+        <Entry x:Name="NameIt" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
