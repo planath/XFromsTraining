@@ -35,25 +35,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="HomePage.cs" />
-    <Compile Include="LayoutExample\AbsoluteLayout.xaml.cs">
+    <Compile Include="CameraPlatformSpecificPage.cs" />
+    <Compile Include="Examples\HomePage.cs" />
+    <Compile Include="Examples\LayoutExample\AbsoluteLayout.xaml.cs">
       <DependentUpon>AbsoluteLayout.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
-    <Compile Include="ColorPickerExample\ColorPickerPage.xaml.cs">
+    <Compile Include="Examples\ColorPickerExample\ColorPickerPage.xaml.cs">
       <DependentUpon>ColorPickerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LayoutExample\RelativePositioningLayout.cs" />
-    <Compile Include="LayoutExample\ScrollAndLayoutOptionsLayouts.xaml.cs">
+    <Compile Include="Examples\LayoutExample\RelativePositioningLayout.cs" />
+    <Compile Include="Examples\LayoutExample\ScrollAndLayoutOptionsLayouts.xaml.cs">
       <DependentUpon>ScrollAndLayoutOptionsLayouts.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListPageExample\ListCell.cs" />
-    <Compile Include="ListPageExample\ListPage.xaml.cs">
+    <Compile Include="Examples\ListPageExample\ListCell.cs" />
+    <Compile Include="Examples\ListPageExample\ListPage.xaml.cs">
       <DependentUpon>ListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MasterDetail.cs" />
+    <Compile Include="Examples\MasterDetailExample\MasterDetail.cs" />
+    <Compile Include="IPictureTaker.cs" />
     <Compile Include="Model\Person.cs" />
-    <Compile Include="PersonPage.cs" />
+    <Compile Include="Examples\MasterDetailExample\PersonPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,25 +63,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ColorPickerExample\ColorPickerPage.xaml">
+    <EmbeddedResource Include="Examples\ColorPickerExample\ColorPickerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ListPageExample\ListPage.xaml">
+    <EmbeddedResource Include="Examples\ListPageExample\ListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LayoutExample\ScrollAndLayoutOptionsLayouts.xaml">
+    <EmbeddedResource Include="Examples\LayoutExample\ScrollAndLayoutOptionsLayouts.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LayoutExample\AbsoluteLayout.xaml">
+    <EmbeddedResource Include="Examples\LayoutExample\AbsoluteLayout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -98,6 +100,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
-using XamarinFromsApp.Model;
+﻿using Xamarin.Forms;
 
 namespace XamarinFromsApp
 {
@@ -29,7 +23,7 @@ namespace XamarinFromsApp
             //};
             //MainPage = new NavigationPage(content);
 
-            var content = new NavigationPage(new HomePage());
+            var content = new NavigationPage(new CameraPlatformSpecificPage());
             MainPage = content;
         }
 
